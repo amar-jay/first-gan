@@ -1,6 +1,6 @@
 ## What is GAN?
 
-A generative adversarial network is a network that uses two networks called a gneerator and discriminator to generate synthetic data can convincingly mimic real data. For example for generating photorealistic images of people.
+A generative adversarial network is a network that uses two networks called a generator and discriminator to generate synthetic data can convincingly mimic real data. For example for generating photorealistic images of people.
 
 ### generator
 
@@ -10,16 +10,16 @@ Learns to generate plausible data. The generated instances become negative train
 
 This is a classifier that analyzes data provided by the generator, and tries to identify if its is fake generated data or real data. It learns to distinguish the generator's fake data from the real data. The discriminator _penalizes the generator for producing fake results_.
 
-During training, the discriminator connects to the two loss functions (The discriminator loss, and the generator loss). During training discriminator ignores the generattor loss and just uses the discriminator loss. We use the generator loss during generator training.
+During training, the discriminator connects to the two loss functions (The discriminator loss, and the generator loss). During training discriminator ignores the generator loss and just uses the discriminator loss. We use the generator loss during generator training.
 During training:
 
 1. It classifies both real data and fake data from the generator.
 2. The discriminator loss penalizes the discriminator for misclassifying a real instance as fake or vice-versa.
-3. The discriminator updates its weight during backpropagation.
+3. The discriminator updates its weight during back-propagation.
 
 ## NOTE
 
-GAN's convergence is hard to identify. that's its headache
+GAN's convergence is hard to identify. That's its headache
 
 ## Resource
 
